@@ -7,6 +7,28 @@
   "license": "MIT",
   "author": "veijdz",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "biome check . && svelte-check --tsconfig ./tsconfig.json && tsc --noEmit",
+    "test": "vitest run --coverage",
+    "test:ui": "vitest",
+    "e2e": "playwright test",
+    "e2e:update": "playwright test --update-snapshots"
+  },
+  "dependencies": {
+    "gsap": "^3.15.0",
+    "svelte": "^5.56.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.16",
+    "@playwright/test": "^1.60.0",
+    "@sveltejs/vite-plugin-svelte": "^7.1.2",
+    "@vitest/coverage-v8": "^4.1.7",
+    "svelte-check": "^4.4.8",
+    "typescript": "^6.0.3",
+    "vite": "^8.0.14",
+    "vitest": "^4.1.7",
+    "vitest-browser-svelte": "^2.1.1"
   }
 }
