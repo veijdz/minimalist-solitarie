@@ -1,0 +1,12 @@
+{
+  "name": "minimalist-solitarie",
+  "version": "0.1.0",
+  "description": "Paciência (Klondike) — jogo web minimalista, dark mode, em pt-br.",
+  "type": "module",
+  "packageManager": "pnpm@11.4.0",
+  "license": "MIT",
+  "author": "veijdz",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
