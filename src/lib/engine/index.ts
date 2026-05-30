@@ -1,4 +1,4 @@
-export { createDeck } from './deck';
+export { createDeck, deal } from './deck';
 export { mulberry32, shuffle } from './rng';
 export type {
   Card,
